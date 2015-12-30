@@ -5,7 +5,7 @@ php:
 - 5.6
 - nightly
 before_script:
-  - composer install --dev
+    - script/before_script.sh
 script:
     - script/check.sh
 notifications:
