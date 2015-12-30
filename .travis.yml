@@ -5,7 +5,11 @@ php:
 - 5.6
 - nightly
 before_script:
-    - script/before_script.sh
+  - script/before_script.sh
+addons:
+  apt:
+    packages:
+      - silversearcher-ag
 script:
     - script/check.sh
 notifications:
