@@ -6,7 +6,8 @@ php:
 - nightly
 before_script:
   - composer install --dev
-script: phpunit --bootstrap bootstrap.php tests/
+script:
+    - script/check.sh
 notifications:
   slack:
     secure: m3Msa5DHgM9wbjzudxjaGSdDUwZoqan3tjGT6WzxZr38N9p9v7juzh6tNnOofwupFBMXnQM1oSYnIp3Qpu2OU9qX+CA/A38pRXbwFyG3W+4gRIA0pLYcP7U1h/R51ji+epaLNfWLisJr8m7CdIy49C65fxgJC8ujQNnnLcZdHlOqPsRM6p/3LM3IZw/iZMYNYKJ/JQuVIPNmB2FA7r+uv7iJA8vz+G1FWgtXdyFCtW4hNswQOU2p3zs0fbVjVqf6TwE/5yxCYVDg+FcMWsLqypU7u6kfalQTRBqBUFIm1e8+Dq0V7fHP7zBxdIFtfDQD6fbIKVqiGhB/1zCFShJoE+g/UTjfU/s0FgWfRGsjZIH8glTovt3N7hAF/eVTrFKOH8NnxZ9tloHjrFhNWa96pBp1v2fqPT6TTyfU7ij+g7X1WPpLojKVwErXq6MMas8xVvealC/OzJB/NPbndUJfIUSDdLXHxybmDxCFwtkNaas7ZvTtrINWyztG+z6076MMMRNlX5EOT/X2G3gdC3B7+Pvpn3FH0o61FjPJeS6VYE4r/Yzn3hqTRAAPWg5v8qrnWGh0EuP+yu9scC7Lopc7foO51eyN5oJrNJ1CLmmNPQH2B+r6PKd9BBY+kGGGxRVN/VMq++42UmkZktbG+07HMfSLxhgg3Ao5PI++zvn/FLU=
