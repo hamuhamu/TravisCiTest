@@ -6,6 +6,7 @@ php:
 - nightly
 before_script:
   - script/before_script.sh
+sudo: false
 addons:
   apt:
     packages:
