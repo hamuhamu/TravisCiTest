@@ -5,7 +5,7 @@ php:
 - 5.6
 - nightly
 before_script:
-  - sudo apt-get update
+  - sudo add-apt-repository ppa:pgolm/the-silver-searcher
   - sudo apt-get install -y silversearcher-ag
   - composer install --dev
 script:
