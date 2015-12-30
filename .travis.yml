@@ -5,12 +5,8 @@ php:
 - 5.6
 - nightly
 before_script:
-  - script/before_script.sh
-sudo: false
-addons:
-  apt:
-    packages:
-      - silversearcher-ag
+  - sudo apt-get install -y silversearcher-ag
+  - composer install --dev
 script:
     - script/check.sh
 notifications:
