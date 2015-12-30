@@ -1,4 +1,5 @@
 #!/bin/bash
 
-apt-get install silversearcher-ag
+sudo apt-get install -y silversearcher-ag
+
 composer install --dev
