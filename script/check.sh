@@ -1,8 +1,11 @@
 #!/bin/bash
 
-n=$(find ./ -name '?*.php' -type f | xargs grep var_dump | wc -l)
-[[ $n -ge 1 ]] && {
-    echo "var?dumpが検出された" 1>&2
+# grepして、var_dumpという文字列にマッチすれば変数に格納される
+greped_var_dump=$(find ./ -name '?*.php' -type f | xargs grep var_dump)
+[[ -n $greped_var_dump ]] && {
+    echo 'var_dumpが検出されました'
+    echo $greped_var_dump
+
     exit 1
 }
 
